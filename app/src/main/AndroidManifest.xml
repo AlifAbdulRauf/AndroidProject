@@ -21,10 +21,21 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ProfilDanListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UbahPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UbahProfilActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

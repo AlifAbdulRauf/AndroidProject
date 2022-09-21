@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/rectangle40" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/btnEditProfil"
         android:layout_width="413dp"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
@@ -88,7 +88,7 @@
         tools:ignore="TextContrastCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button5"
+        android:id="@+id/btnGantiPass"
         android:layout_width="413dp"
         android:layout_height="48dp"
         android:layout_marginTop="5dp"
@@ -97,7 +97,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditProfil"
         app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -114,7 +114,6 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
         android:text="Ulangi Password Baru"
-        android:textColorHighlight="grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
@@ -125,7 +124,6 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
         android:text="Password Baru"
-        android:textColorHighlight="grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputEditText3"
         tools:ignore="MissingConstraints" />
@@ -137,7 +135,6 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="144dp"
         android:text="Password Lama"
-        android:textColorHighlight="grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />

@@ -10,9 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnLogin.setOnClickListener {
-            Intent(this,ProfilDanListActivity::class.java).also{
+            Intent(this,ProfilDanListActivity :: class.java).also {
                 startActivity(it)
             }
         }
+
     }
 }

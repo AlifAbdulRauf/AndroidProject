@@ -60,11 +60,12 @@
         android:layout_width="157dp"
         android:layout_height="48dp"
         android:layout_marginTop="48dp"
+        android:background="#81AA66"
         android:text="Masuk"
         android:textColor="@color/white"
-        android:background="#81AA66"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
+        tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

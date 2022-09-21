@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/rectangle40" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/btnEditProfil"
         android:layout_width="413dp"
         android:layout_height="48dp"
         android:layout_marginTop="1dp"
@@ -73,32 +73,16 @@
         tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button5"
+        android:id="@+id/btnGantiPass"
         android:layout_width="413dp"
         android:layout_height="48dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="90dp"
         android:background="#949494"
         android:text="Ganti Paswoard"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="290dp"
-        android:text="keluar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEditProfil" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -195,7 +179,6 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
         android:text="Email"
-        android:textColorHighlight="grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
@@ -206,7 +189,6 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
         android:text="No HP"
-        android:textColorHighlight="grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
@@ -217,7 +199,6 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
         android:text="Jurusan"
-        android:textColorHighlight="grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
@@ -228,7 +209,6 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
         android:text="Jumlah Mahasiswa Bimbingan"
-        android:textColorHighlight="grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
@@ -239,7 +219,6 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
         android:text="NIP"
-        android:textColorHighlight="grey"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
@@ -261,11 +240,10 @@
         android:id="@+id/imageView4"
         android:layout_width="25dp"
         android:layout_height="29dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="18dp"
-        app:layout_constraintEnd_toStartOf="@+id/button6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:srcCompat="@drawable/logout" />
 
     <ImageView

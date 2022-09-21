@@ -10,54 +10,50 @@
         android:id="@+id/button4"
         android:layout_width="110dp"
         android:layout_height="48dp"
-        android:layout_marginTop="664dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="16dp"
+        android:background="#CDAE0D"
         android:text="Jadwal"
         android:textSize="12dp"
-        android:background="#CDAE0D"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="414dp"
         android:layout_height="100dp"
-        android:layout_marginTop="-2dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rectangle40"
-        android:scaleType="centerCrop"/>
+        app:srcCompat="@drawable/rectangle40" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <ImageButton
+        android:id="@+id/ivProfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="350dp"
         android:layout_marginBottom="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profil"
-       />
+        android:background="#81AA66"
+        app:srcCompat="@drawable/profil" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="250dp"
         android:text="Selamat Sore"
         android:textSize="12dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivProfil"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -65,30 +61,35 @@
         android:layout_width="110dp"
         android:layout_height="48dp"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="664dp"
+        android:layout_marginTop="328dp"
         android:layout_marginEnd="10dp"
+        android:background="#81AA66"
         android:text="Detail TA"
         android:textSize="12dp"
-        android:background="#81AA66"
         app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
         android:text="Marthin Luther Day"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="44dp" />
+        app:layout_constraintStart_toEndOf="@+id/ivProfil"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
         android:text="12324533224"
-        android:textSize="12dp"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="63dp" />
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/ivProfil"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
