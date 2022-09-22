@@ -38,11 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="300dp"
         android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.959"
@@ -52,52 +49,47 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
         android:text="Marthin Luther Day"
         android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/ivProfil"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:text="12324533224"
         android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivProfil"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnEditProfil"
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
         android:background="#81AA66"
         android:text="Simpan"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
         tools:ignore="TextContrastCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnGantiPass"
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="90dp"
         android:text="Cancel"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEditProfil"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEditProfil" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -105,19 +97,6 @@
         tools:ignore="MissingConstraints">
 
     </com.google.android.material.textfield.TextInputLayout>
-
-    <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="12"
-        android:textSize="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView5"
@@ -184,7 +163,8 @@
         android:id="@+id/textInputEditText3"
         android:layout_width="380dp"
         android:layout_height="48dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="12dp"
+        android:hint="Marthin Luther Day"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
@@ -194,7 +174,7 @@
         android:id="@+id/editText"
         android:layout_width="380dp"
         android:layout_height="48dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="12dp"
         android:hint="12324533224"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -205,7 +185,7 @@
         android:id="@+id/editText2"
         android:layout_width="380dp"
         android:layout_height="48dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="12dp"
         android:hint="marthin123@gmail.com"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -216,7 +196,7 @@
         android:id="@+id/editText4"
         android:layout_width="380dp"
         android:layout_height="48dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="12dp"
         android:hint="0800000"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -227,7 +207,7 @@
         android:id="@+id/editText5"
         android:layout_width="380dp"
         android:layout_height="48dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="12dp"
         android:hint="Sistem Informasi"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -244,6 +224,17 @@
         app:layout_constraintTop_toTopOf="parent"
         android:background="@color/white"
         app:srcCompat="@drawable/buttonback" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="12"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
