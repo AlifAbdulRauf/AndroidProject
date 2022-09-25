@@ -3,7 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/cococo/AndroidProject/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_detail_log_book.xml" value="0.25416666666666665" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_detail_seminar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_detailta.xml" value="0.264" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_editnilaita.xml" value="0.25416666666666665" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_inputnilaita.xml" value="0.4" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_itemlistdetailta.xml" value="0.264" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_itemlistjadwal.xml" value="0.264" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_jadwalseminardansidang.xml" value="0.4" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_persetujuannimbingan_ta.xml" value="0.25416666666666665" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/activity_profilmahasiswa.xml" value="0.2" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/itemlistmahasiswa.xml" value="0.11267605633802817" />
+        <entry key="..\:/Materi Kuliah/Semester 7/PTB/projek/tb/AndroidProject/app/src/main/res/layout/rv_list_logbokk.xml" value="0.25416666666666665" />
+        <entry key="..\:/cococo/AndroidProject/app/src/main/res/layout/activity_detail_log_book.xml" value="0.25" />
+        <entry key="..\:/cococo/AndroidProject/app/src/main/res/layout/activity_detail_seminar.xml" value="0.25" />
+        <entry key="..\:/cococo/AndroidProject/app/src/main/res/layout/activity_detail_sidang.xml" value="0.25" />
+        <entry key="..\:/cococo/AndroidProject/app/src/main/res/layout/activity_list_log_book.xml" value="0.25" />
+        <entry key="..\:/cococo/AndroidProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/cococo/AndroidProject/app/src/main/res/layout/form_pembatalan.xml" value="0.22" />
+        <entry key="..\:/cococo/AndroidProject/app/src/main/res/layout/rv_list_logbokk.xml" value="0.25" />
+        <entry key="..\:/cococo/AndroidProject/app/src/main/res/layout/rvlogbook.xml" value="0.2" />
       </map>
     </option>
   </component>
