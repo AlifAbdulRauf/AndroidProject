@@ -27,8 +27,26 @@ class Adaptor_rv_logbok (
             tvNumber.text = list1[position].number.toString()
             tvDescribe.text = list1[position].describe
             cbListLogBook.isChecked = list1[position].isChecked
+            this.setOnClickListener {
+                if(this.context is ListLogBook){
+                    (this.context as ListLogBook).itemGetClicked()
+                }
+            }
         }
     }
+
+    //    override fun onBindViewHolder(holder: LogbookViewHolder, position: Int) {
+//        holder.apply{
+//            tvNumber.text = list1[position].number.toString()
+//            tvDescribe.text = list1[position].describe
+//            cbListLogBook.isChecked = list1[position].isChecked
+//            itemView.setOnClickListener {
+//                if(itemView.context is ListLogBook){
+//                    (itemView.context as ListLogBook).itemGetClicked()
+//                }
+//            }
+//        }
+//    }
 
 
 }

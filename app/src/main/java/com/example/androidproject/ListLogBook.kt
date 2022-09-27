@@ -18,6 +18,18 @@ class ListLogBook : AppCompatActivity() {
             Item_logbook(1, "Analisi Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
             Item_logbook(2, "Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
             Item_logbook(3, "Analisi Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(1, "Analisi Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(2, "Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(3, "Analisi Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(1, "Analisi Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(2, "Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(3, "Analisi Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(1, "Analisi Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(2, "Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(3, "Analisi Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(1, "Analisi Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(2, "Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
+            Item_logbook(3, "Analisi Bisnis Proses Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) ", false),
         )
 
         val adapter = Adaptor_rv_logbok(listlogbook)
@@ -30,6 +42,10 @@ class ListLogBook : AppCompatActivity() {
 
         }
 
+    }
+    fun itemGetClicked(){
+        val intent = Intent(this, DetailLogBook::class.java)
+        startActivity(intent)
     }
 
 }
