@@ -17,6 +17,19 @@
             android:name=".RvLogBook"
             android:exported="false" />
         <activity
+            android:name=".profilmahasiswa"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilDanListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".jadwalseminardansidang"
+            android:exported="false" />
+        <activity
+            android:name=".detailta"
+            android:exported="false" />
+
+        <activity
             android:name=".FormPembatalan"
             android:exported="false" />
 
@@ -41,6 +54,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".editnilaita"
+            android:exported="false" />
+
+        <activity
+            android:name=".inputnilaita"
+            android:exported="false" />
+        <activity
+            android:name=".itemlistdetailta"
+            android:exported="false" />
+        <activity
+            android:name=".itemlistjadwal"
+            android:exported="false" />
+        <activity
+            android:name=".persetujuanbimbinganta"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UbahPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UbahProfilActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

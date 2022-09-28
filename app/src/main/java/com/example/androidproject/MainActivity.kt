@@ -9,13 +9,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        btnMain.setOnClickListener(){
-            Intent(this, ListLogBook::class.java).also {
+        btnLogin.setOnClickListener {
+            Intent(this,ProfilDanListActivity :: class.java).also {
                 startActivity(it)
             }
         }
+
     }
-
-
 }

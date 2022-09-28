@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="itemlistmahasiswa"
+    android:layout_marginTop="5dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D9D9D9">
+
+        <Button
+            android:id="@+id/btntolak"
+            android:layout_width="125dp"
+            android:layout_height="37dp"
+            android:backgroundTint="#E50000"
+            android:text="TOLAK"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnlistlogbook"
+            app:layout_constraintTop_toTopOf="@+id/btnlistlogbook"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/simbol3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/simbol2"
+            app:layout_constraintTop_toTopOf="@+id/judulta" />
+
+        <TextView
+            android:id="@+id/simbol2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/simbol1"
+            app:layout_constraintTop_toTopOf="@+id/nim" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Nama"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nim "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/nama"
+            app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+        <TextView
+            android:id="@+id/judulta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Judul TA"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/nim"
+            app:layout_constraintTop_toBottomOf="@+id/nim" />
+
+        <TextView
+            android:id="@+id/simbol1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text=":"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/nama"
+            app:layout_constraintTop_toTopOf="@+id/nama" />
+
+        <TextView
+            android:id="@+id/namamahasiswa1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Udin"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/simbol1"
+            app:layout_constraintTop_toTopOf="@+id/simbol1" />
+
+        <TextView
+            android:id="@+id/nimmahasiwa1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="19123456"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/simbol2"
+            app:layout_constraintTop_toTopOf="@+id/simbol2" />
+
+        <TextView
+            android:id="@+id/judultamahasiswa1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Inovasi SI"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/simbol3"
+            app:layout_constraintTop_toTopOf="@+id/judulta" />
+
+        <Button
+            android:id="@+id/btnlistlogbook"
+            android:layout_width="125dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#81AA66"
+            android:text="SETUJU"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/judulta"
+            app:layout_constraintTop_toBottomOf="@+id/judulta"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="95dp"
+            android:background="@color/black"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nama"
+            app:srcCompat="@drawable/progilmaha" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
