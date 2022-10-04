@@ -3,9 +3,9 @@ package com.example.androidproject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_profil.*
-import kotlinx.android.synthetic.main.activity_profil.ivProfil
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_list_log_book.*
+import kotlinx.android.synthetic.main.activity_profil.ivProfill
 import kotlinx.android.synthetic.main.activity_profil_dan_list.*
 
 class ProfilDanListActivity : AppCompatActivity() {
@@ -13,7 +13,7 @@ class ProfilDanListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profil_dan_list)
 
-        ivProfil.setOnClickListener {
+        ivProfill.setOnClickListener {
             Intent(this,ProfilActivity :: class.java).also {
                 startActivity(it)
             }
@@ -29,5 +29,40 @@ class ProfilDanListActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+        imageButton.setOnClickListener{
+            Intent(this, persetujuanbimbinganta ::class.java ).also {
+                startActivity(it)
+            }
+        }
+
+        var listProfill = mutableListOf(
+            Item_rv_listProfil(2011522, "AA"),
+            Item_rv_listProfil(2011523, "AB"),
+            Item_rv_listProfil(2011524, "AA"),
+            Item_rv_listProfil(2011522, "AA"),
+            Item_rv_listProfil(2011522, "AC"),
+            Item_rv_listProfil(2011522, "AA"),
+            Item_rv_listProfil(2011522, "AC"),
+            Item_rv_listProfil(2011522, "AA"),
+            Item_rv_listProfil(2011522, "AC"),
+            Item_rv_listProfil(2011522, "AA"),
+            Item_rv_listProfil(2011522, "AC"),
+            Item_rv_listProfil(2011522, "AA"),
+            Item_rv_listProfil(2011522, "AC"),
+            Item_rv_listProfil(2011522, "AA"),
+            Item_rv_listProfil(2011522, "AC"),
+        )
+
+        val adapter = Adaptor_rv_listProfil(listProfill)
+        rvProfilMahasiswa.adapter = adapter
+        rvProfilMahasiswa.layoutManager = LinearLayoutManager(this)
+
     }
+
+    fun itemGetClicked(){
+        val intent = Intent(this, profilmahasiswa::class.java)
+        startActivity(intent)
+    }
+
 }

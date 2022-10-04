@@ -129,7 +129,7 @@
             android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/nama"
-            app:srcCompat="@drawable/progilmaha" />
+            app:srcCompat="@drawable/profilmhs" />
 
         <EditText
             android:id="@+id/editTextDate2"
