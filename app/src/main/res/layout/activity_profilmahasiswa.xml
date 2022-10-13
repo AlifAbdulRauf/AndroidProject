@@ -209,7 +209,7 @@
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/view2"
-        app:srcCompat="@drawable/arrowleft" />
+        app:srcCompat="@drawable/progilmaha" />
 
     <TextView
         android:id="@+id/tvPersetujuan"
