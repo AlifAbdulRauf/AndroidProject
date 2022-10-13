@@ -6,9 +6,10 @@ import android.view.ViewGroup
 import android.widget.AdapterViewAnimator
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.rv_list_logbokk.view.*
+import kotlinx.coroutines.processNextEventInCurrentThread
 
 class Adaptor_rv_logbok (
-    var list1 : List<Item_logbook>
+    private var list1 : List<Item_logbook>,
 ) : RecyclerView.Adapter<Adaptor_rv_logbok.LogbookViewHolder>() {
 
     inner class LogbookViewHolder  (itemView: View) : RecyclerView.ViewHolder(itemView)
@@ -23,17 +24,24 @@ class Adaptor_rv_logbok (
     }
 
     override fun onBindViewHolder(holder: LogbookViewHolder, position: Int) {
+        val currentItem = list1[position]
         holder.itemView.apply{
-            tvNumber.text = list1[position].number.toString()
-            tvDescribe.text = list1[position].describe
-            cbListLogBook.isChecked = list1[position].isChecked
+            tvNumber.text = currentItem.number.toString()
+            tvDescribe.text = currentItem.describe
+            cbListLogBook.isChecked = currentItem.isChecked
+
+
             this.setOnClickListener {
+                currentItem.isChecked = cbListLogBook.isChecked
                 if(this.context is ListLogBook){
-                    (this.context as ListLogBook).itemGetClicked()
+                    (this.context as ListLogBook).itemGetClicked(currentItem)
+
                 }
             }
         }
     }
+
+
 
     //    override fun onBindViewHolder(holder: LogbookViewHolder, position: Int) {
 //        holder.apply{

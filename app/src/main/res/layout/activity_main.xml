@@ -9,7 +9,7 @@
     tools:contex=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvPersetujuan"
         android:layout_width="360dp"
         android:layout_height="71dp"
         android:layout_marginTop="36dp"
@@ -42,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPersetujuan" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText2"

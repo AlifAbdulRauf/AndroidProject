@@ -114,7 +114,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFormPembatalan" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailLogBook" />
 
     <ImageView
         android:id="@+id/ibBackListLogBook"
@@ -139,7 +139,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/tvFormPembatalan"
+        android:id="@+id/tvDetailLogBook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -159,10 +159,10 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/bgaccent"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/tvFormPembatalan"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetailLogBook"
         app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFormPembatalan"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailLogBook"
         app:layout_constraintVertical_bias="0.736" />
 
     <TextView
@@ -200,8 +200,8 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/tvPersetujuan"
+        app:layout_constraintTop_toBottomOf="@+id/tvPersetujuan" />
 
     <TextView
         android:id="@+id/textView10"
@@ -215,7 +215,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvPersetujuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -248,10 +248,10 @@
         android:textColor="#757575"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvJudul"
         android:layout_width="314dp"
         android:layout_height="28dp"
         android:layout_marginTop="16dp"

@@ -182,9 +182,9 @@
         android:text=":"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintBottom_toBottomOf="@+id/tvJudul"
         app:layout_constraintEnd_toEndOf="@+id/simbol"
-        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/tvJudul"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -195,10 +195,10 @@
         android:text=":"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPersetujuan"
         app:layout_constraintEnd_toEndOf="@+id/simbol6"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/tvPersetujuan"
+        app:layout_constraintTop_toTopOf="@+id/tvPersetujuan"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -212,7 +212,7 @@
         app:srcCompat="@drawable/arrowleft" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvPersetujuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -232,18 +232,18 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/simbol"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="@+id/tvPersetujuan" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvJudul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="NO BP"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/tvPersetujuan"
+        app:layout_constraintTop_toBottomOf="@+id/tvPersetujuan" />
 
     <TextView
         android:id="@+id/textView6"
@@ -253,8 +253,8 @@
         android:text="ALAMAT"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="@+id/tvJudul"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
 
     <TextView
         android:id="@+id/textView7"

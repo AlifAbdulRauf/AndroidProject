@@ -19,7 +19,7 @@ class ProfilDanListActivity : AppCompatActivity() {
             }
         }
         btnKeJadwal.setOnClickListener{
-            Intent(this, jadwalseminardansidang ::class.java).also{
+            Intent(this, JadwalSeminarMahasiswa ::class.java).also{
                 startActivity(it)
             }
         }

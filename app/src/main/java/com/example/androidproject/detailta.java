@@ -12,6 +12,7 @@ import android.net.Uri;
 public class detailta extends AppCompatActivity {
 
     Button btnDetailSeminar, btnDetailSidang, btnListLogBook, btnPembatalanTA;
+    ImageButton btnBack;
     ImageButton ibProfil;
 
     @Override
@@ -20,6 +21,16 @@ public class detailta extends AppCompatActivity {
         setContentView(R.layout.activity_detailta);
 
 
+        btnBack = findViewById(R.id.BackButton);
+
+
+        btnBack.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void onClick(View view){
+                Intent intent = new Intent(getApplicationContext(), ProfilDanListActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnDetailSeminar = findViewById(R.id.btnDetSeminar);
         btnDetailSidang = findViewById(R.id.btnDetSidang);

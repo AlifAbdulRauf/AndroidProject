@@ -16,24 +16,26 @@
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_detail_log_book.xml" value="0.33" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_detail_seminar.xml" value="0.18" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_detail_sidang.xml" value="0.33" />
-        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_detailta.xml" value="0.22" />
+        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_detailta.xml" value="0.33" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_editnilaita.xml" value="0.25" />
-        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_inputnilaita.xml" value="0.10674157303370786" />
+        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_inputnilaita.xml" value="0.33" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_itemlistdetailta.xml" value="0.33" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_itemlistjadwal.xml" value="0.33" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_jadwalseminardansidang.xml" value="0.33" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_list_log_book.xml" value="0.33" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_persetujuannimbingan_ta.xml" value="0.17" />
+        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_persetujuannimbingan_ta.xml" value="0.25" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_profil.xml" value="0.33" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_profil_dan_list.xml" value="0.25" />
-        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_profilmahasiswa.xml" value="0.10674157303370786" />
+        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_profilmahasiswa.xml" value="0.33" />
+        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_rv_api.xml" value="0.25" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_ubah_pass.xml" value="0.33" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_ubah_profil.xml" value="0.33" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/form_pembatalan.xml" value="0.33" />
+        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/item_rv_api.xml" value="0.5" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/itemlistmahasiswa.xml" value="0.33" />
-        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/rv_list_logbokk.xml" value="0.33" />
+        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/rv_list_logbokk.xml" value="0.22" />
       </map>
     </option>
   </component>

@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFormPembatalan" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailLogBook" />
 
     <TextView
         android:id="@+id/textView4"
@@ -31,7 +31,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/tvFormPembatalan"
+        android:id="@+id/tvDetailLogBook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
@@ -73,10 +73,10 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/bgaccent"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/tvFormPembatalan"
+        app:layout_constraintEnd_toEndOf="@+id/tvDetailLogBook"
         app:layout_constraintHorizontal_bias="0.261"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFormPembatalan"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailLogBook"
         app:layout_constraintVertical_bias="0.736" />
 
     <TextView
@@ -87,13 +87,13 @@
         android:text="Dosen Pembimbing : Bapak ..."
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/tvJudul"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="@+id/tvJudul"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvJudul"
         android:layout_width="330dp"
         android:layout_height="24dp"
         android:layout_marginTop="12dp"
