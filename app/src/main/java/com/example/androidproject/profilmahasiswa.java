@@ -10,16 +10,13 @@ import android.widget.ImageButton;
 
 public class profilmahasiswa extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profilmahasiswa);
 
-
         Button btnNilai, btnEdit, btnHapus;
-
-
-
 
         btnNilai = findViewById(R.id.btnnilai1);
         btnEdit = findViewById(R.id.btnedit);
@@ -41,6 +38,7 @@ public class profilmahasiswa extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
 //        btnHapus.setOnClickListener(new View.OnClickListener(){
 //            @Override

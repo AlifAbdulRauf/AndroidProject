@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_profil.ivProfill
 import kotlinx.android.synthetic.main.activity_profil_dan_list.*
 
 class ProfilDanListActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profil_dan_list)
@@ -37,21 +38,21 @@ class ProfilDanListActivity : AppCompatActivity() {
         }
 
         var listProfill = mutableListOf(
-            Item_rv_listProfil(2011522, "AA"),
-            Item_rv_listProfil(2011523, "AB"),
-            Item_rv_listProfil(2011524, "AA"),
-            Item_rv_listProfil(2011522, "AA"),
-            Item_rv_listProfil(2011522, "AC"),
-            Item_rv_listProfil(2011522, "AA"),
-            Item_rv_listProfil(2011522, "AC"),
-            Item_rv_listProfil(2011522, "AA"),
-            Item_rv_listProfil(2011522, "AC"),
-            Item_rv_listProfil(2011522, "AA"),
-            Item_rv_listProfil(2011522, "AC"),
-            Item_rv_listProfil(2011522, "AA"),
-            Item_rv_listProfil(2011522, "AC"),
-            Item_rv_listProfil(2011522, "AA"),
-            Item_rv_listProfil(2011522, "AC"),
+            Item_rv_listProfil(2011520, "UDIN1"),
+            Item_rv_listProfil(2011521, "UDIN2"),
+            Item_rv_listProfil(2011522, "UDIN3"),
+            Item_rv_listProfil(2011523, "UDIN4"),
+            Item_rv_listProfil(2011524, "UDIN5"),
+            Item_rv_listProfil(2011525, "UDIN6"),
+            Item_rv_listProfil(2011526, "UDIN7"),
+            Item_rv_listProfil(2011527, "UDIN8"),
+            Item_rv_listProfil(2011528, "UDIN9"),
+            Item_rv_listProfil(2011529, "UDIN10"),
+            Item_rv_listProfil(2011530, "UDIN11"),
+            Item_rv_listProfil(2011531, "UDIN12"),
+            Item_rv_listProfil(2011532, "UDIN13"),
+            Item_rv_listProfil(2011533, "UDIN14"),
+            Item_rv_listProfil(2011534, "UDIN15"),
         )
 
         val adapter = Adaptor_rv_listProfil(listProfill)
@@ -60,7 +61,7 @@ class ProfilDanListActivity : AppCompatActivity() {
 
     }
 
-    fun itemGetClicked(){
+    fun itemGetClicked(item:Item_rv_listProfil){
         val intent = Intent(this, profilmahasiswa::class.java)
         startActivity(intent)
     }
