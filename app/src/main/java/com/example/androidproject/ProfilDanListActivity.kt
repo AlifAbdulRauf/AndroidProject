@@ -61,7 +61,7 @@ class ProfilDanListActivity : AppCompatActivity() {
 
     }
 
-    fun itemGetClicked(item:Item_rv_listProfil){
+    fun itemGetClicked(){
         val intent = Intent(this, profilmahasiswa::class.java)
         startActivity(intent)
     }

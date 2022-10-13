@@ -26,7 +26,6 @@ class Adaptor_rv_listProfil (
         holder.itemView.apply{
             nimmahasiwa1.text = list1[position].nim.toString()
             namamahasiswa1.text = list1[position].nama
-
             this.setOnClickListener {
                 if(this.context is ProfilDanListActivity){
                     (this.context as ProfilDanListActivity).itemGetClicked()
