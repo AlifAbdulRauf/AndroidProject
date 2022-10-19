@@ -236,7 +236,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/ivLogout"
         android:layout_width="40dp"
         android:layout_height="33dp"

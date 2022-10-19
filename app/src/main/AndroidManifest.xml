@@ -23,7 +23,10 @@
             android:name=".ProfilDanListActivity"
             android:exported="false" />
         <activity
-            android:name=".jadwalseminardansidang"
+            android:name=".JadwalSeminarMahasiswa"
+            android:exported="false" />
+        <activity
+            android:name=".PersetujuanBimbingan"
             android:exported="false" />
         <activity
             android:name=".detailta"

@@ -14,7 +14,7 @@ class Adaptor_rv_logbok (
 
     inner class LogbookViewHolder  (itemView: View) : RecyclerView.ViewHolder(itemView)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LogbookViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType : Int): LogbookViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.rv_list_logbokk,parent, false)
         return LogbookViewHolder(view)
     }

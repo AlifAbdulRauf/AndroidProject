@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:descendantFocusability="afterDescendants"
     android:foregroundTint="#009C27B0"
-    tools:context=".persetujuanbimbinganta">
+    tools:context=".PersetujuanBimbingan">
 
     <TextView
         android:id="@+id/innilaita"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/BackButton"
+        android:id="@+id/backbutton"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -70,8 +70,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvList"
-        android:layout_width="415dp"
-        android:layout_height="887dp"
+        android:layout_width="398dp"
+        android:layout_height="552dp"
         android:layout_marginHorizontal="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"

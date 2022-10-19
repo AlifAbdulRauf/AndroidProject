@@ -13,7 +13,7 @@ class PersetujuanBimbingan : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_persetujuannimbingan_ta)
 
-        ibBackListLogBook.setOnClickListener{
+        backbutton.setOnClickListener{
             Intent(this, ListLogBook::class.java).also {
                 finish()
             }

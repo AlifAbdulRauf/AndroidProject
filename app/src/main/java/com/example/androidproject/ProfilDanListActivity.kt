@@ -32,7 +32,7 @@ class ProfilDanListActivity : AppCompatActivity() {
         }
 
         imageButton.setOnClickListener{
-            Intent(this, persetujuanbimbinganta ::class.java ).also {
+            Intent(this, PersetujuanBimbingan ::class.java ).also {
                 startActivity(it)
             }
         }

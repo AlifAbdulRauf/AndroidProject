@@ -84,7 +84,8 @@
         android:id="@+id/nama3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:text="Nama"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/ibProfilMahasiswa"
@@ -151,22 +152,24 @@
         android:id="@+id/textnilaita3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
         android:text="Nilai TA"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/ibProfilMahasiswa"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="@+id/ibProfilMahasiswa"
+        app:layout_constraintEnd_toStartOf="@+id/nama3"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ibProfilMahasiswa" />
 
     <EditText
         android:id="@+id/nilaita3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:ems="2"
         android:inputType="number"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/textnilaita3"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textnilaita3"
         app:layout_constraintTop_toBottomOf="@+id/textnilaita3"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -198,7 +201,8 @@
         android:id="@+id/textdetailta3"
         android:layout_width="59dp"
         android:layout_height="20dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:shadowColor="@color/black"
         android:text="Detai TA"
         android:textColor="@color/black"
@@ -220,6 +224,7 @@
         android:id="@+id/detaita3"
         android:layout_width="290dp"
         android:layout_height="100dp"
+        android:layout_marginTop="16dp"
         android:text="Sistem Informasi Riset Inovasi Pemerintah dan Masyarakat Kabupaten Sragen (SI-RISMA) merupakan sebuah aplikasi untuk menyajikan segala informasi tentang inovasi-inovasi yang ada di Kabupaten Sragen. "
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/textdetailta3"
@@ -307,7 +312,7 @@
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nipdosen"
-        app:srcCompat="@drawable/progilmaha" />
+        app:srcCompat="@drawable/profilmahasiswa" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

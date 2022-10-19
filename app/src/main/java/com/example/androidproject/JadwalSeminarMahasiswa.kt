@@ -10,12 +10,13 @@ import kotlinx.android.synthetic.main.form_pembatalan.*
 import kotlinx.android.synthetic.main.form_pembatalan.ibBackListLogBook
 
 class JadwalSeminarMahasiswa : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jadwalseminardansidang)
 
-        ibBackListLogBook.setOnClickListener{
-            Intent(this, detailta::class.java).also {
+        BackButton.setOnClickListener{
+            Intent(this, ProfilDanListActivity::class.java).also {
                 finish()
             }
         }

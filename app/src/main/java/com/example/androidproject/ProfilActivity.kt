@@ -11,6 +11,12 @@ class ProfilActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profil)
 
+        ivLogout.setOnClickListener {
+            Intent(this,MainActivity :: class.java).also {
+                startActivity(it)
+            }
+        }
+
         btnEditProfil.setOnClickListener {
             Intent(this,UbahProfilActivity :: class.java).also {
                 startActivity(it)
@@ -19,11 +25,6 @@ class ProfilActivity : AppCompatActivity() {
                 Intent(this,UbahPassActivity :: class.java).also {
                     startActivity(it)
 
-                    ivLogout.setOnClickListener {
-                        Intent(this,MainActivity :: class.java).also {
-                            startActivity(it)
-                        }
-                    }
                 }
             }
         }
