@@ -24,11 +24,11 @@ class Adaptor_rv_listProfil (
 
     override fun onBindViewHolder(holder: ListProfilViewHolder, position: Int) {
         holder.itemView.apply{
-            nimmahasiwa1.text = list1[position].nim.toString()
+            nimmahasiwa1.text = list1[position].nim
             namamahasiswa1.text = list1[position].nama
             this.setOnClickListener {
                 if(this.context is ProfilDanListActivity){
-                    (this.context as ProfilDanListActivity).itemGetClicked()
+                    (this.context as ProfilDanListActivity).itemGetClicked(list1[position])
                 }
             }
         }

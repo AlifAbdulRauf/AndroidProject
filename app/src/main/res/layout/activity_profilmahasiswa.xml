@@ -220,7 +220,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvnama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -297,7 +297,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tvnim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -309,7 +309,7 @@
         app:layout_constraintTop_toTopOf="@+id/simbol4" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tvalamat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -321,7 +321,7 @@
         app:layout_constraintTop_toTopOf="@+id/simbol5" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/tvttl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

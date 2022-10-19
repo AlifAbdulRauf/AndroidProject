@@ -38,21 +38,21 @@ class ProfilDanListActivity : AppCompatActivity() {
         }
 
         var listProfill = mutableListOf(
-            Item_rv_listProfil(2011520, "UDIN1"),
-            Item_rv_listProfil(2011521, "UDIN2"),
-            Item_rv_listProfil(2011522, "UDIN3"),
-            Item_rv_listProfil(2011523, "UDIN4"),
-            Item_rv_listProfil(2011524, "UDIN5"),
-            Item_rv_listProfil(2011525, "UDIN6"),
-            Item_rv_listProfil(2011526, "UDIN7"),
-            Item_rv_listProfil(2011527, "UDIN8"),
-            Item_rv_listProfil(2011528, "UDIN9"),
-            Item_rv_listProfil(2011529, "UDIN10"),
-            Item_rv_listProfil(2011530, "UDIN11"),
-            Item_rv_listProfil(2011531, "UDIN12"),
-            Item_rv_listProfil(2011532, "UDIN13"),
-            Item_rv_listProfil(2011533, "UDIN14"),
-            Item_rv_listProfil(2011534, "UDIN15"),
+            Item_rv_listProfil("2011520", "UDIN1", "Padang", "Padang" ),
+            Item_rv_listProfil("2011521", "UDIN2", "Padang panjang", "Padang panjang"),
+            Item_rv_listProfil("2011522", "UDIN3","Solok", "Padang"),
+            Item_rv_listProfil("2011523", "UDIN4","padang", "Medan"),
+            Item_rv_listProfil("2011524", "UDIN5","Padang", "Padang"),
+            Item_rv_listProfil("2011525", "UDIN6","Padang", "Padang"),
+            Item_rv_listProfil("2011526", "UDIN7","Padang", "Padang"),
+            Item_rv_listProfil("2011527", "UDIN8","Padang", "Padang"),
+            Item_rv_listProfil("2011528", "UDIN9","Padang", "Padang"),
+            Item_rv_listProfil("2011529", "UDIN10","Padang", "Padang"),
+            Item_rv_listProfil("2011530", "UDIN11","Padang", "Padang"),
+            Item_rv_listProfil("2011531", "UDIN12","Padang", "Padang"),
+            Item_rv_listProfil("2011532", "UDIN13","Padang", "Padang"),
+            Item_rv_listProfil("2011533", "UDIN14","Padang", "Padang"),
+            Item_rv_listProfil("2011534", "UDIN15", "Padang", "Padang"),
         )
 
         val adapter = Adaptor_rv_listProfil(listProfill)
@@ -61,9 +61,28 @@ class ProfilDanListActivity : AppCompatActivity() {
 
     }
 
-    fun itemGetClicked(){
-        val intent = Intent(this, profilmahasiswa::class.java)
-        startActivity(intent)
+//    fun itemGetClicked(){
+//        val intent = Intent(this, profilmahasiswa::class.java)
+//        startActivity(intent)
+//    }
+
+    fun itemGetClicked(item:Item_rv_listProfil) {
+        Intent(this, profilmahasiswa::class.java).also {
+//            val q = tvprofilmahasiswa.text.toString()
+            val nama = item.nama
+            it.putExtra("EXRA_NAMA", nama)
+
+            val nim = item.nim
+            it.putExtra("EXRA_NIM", nim)
+
+            val alamat = item.alamat
+            it.putExtra("EXRA_ALAMAT", alamat)
+
+            val ttl = item.ttl
+            it.putExtra("EXRA_TTL", ttl)
+
+            startActivity(it)
+        }
     }
 
 }
