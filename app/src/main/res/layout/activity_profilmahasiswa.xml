@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:descendantFocusability="afterDescendants"
     android:foregroundTint="#009C27B0"
-    tools:context=".profilmahasiswa">
+    tools:context=".activity.profilmahasiswa">
 
     <TextView
         android:id="@+id/innilaita"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:descendantFocusability="afterDescendants"
     android:foregroundTint="#009C27B0"
-    tools:context=".PersetujuanBimbingan">
+    tools:context=".activity.PersetujuanBimbingan">
 
     <TextView
         android:id="@+id/innilaita"

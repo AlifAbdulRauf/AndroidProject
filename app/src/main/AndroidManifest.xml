@@ -14,42 +14,42 @@
         android:theme="@style/Theme.AndroidProject"
         tools:targetApi="31">
         <activity
-            android:name=".RvLogBook"
+            android:name=".activity.RvLogBook"
             android:exported="false" />
         <activity
-            android:name=".profilmahasiswa"
+            android:name=".activity.profilmahasiswa"
             android:exported="false" />
         <activity
-            android:name=".ProfilDanListActivity"
+            android:name=".activity.ProfilDanListActivity"
             android:exported="false" />
         <activity
-            android:name=".JadwalSeminarMahasiswa"
+            android:name=".activity.JadwalSeminarMahasiswa"
             android:exported="false" />
         <activity
-            android:name=".PersetujuanBimbingan"
+            android:name=".activity.PersetujuanBimbingan"
             android:exported="false" />
         <activity
-            android:name=".detailta"
-            android:exported="false" />
-
-        <activity
-            android:name=".FormPembatalan"
+            android:name=".activity.detailta"
             android:exported="false" />
 
         <activity
-            android:name=".ListLogBook"
+            android:name=".activity.FormPembatalan"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.ListLogBook"
             android:exported="false" />
         <activity
-            android:name=".DetailSeminar"
+            android:name=".activity.DetailSeminar"
             android:exported="false" />
         <activity
-            android:name=".DetailSidang"
+            android:name=".activity.DetailSidang"
             android:exported="false" />
         <activity
-            android:name=".DetailLogBook"
+            android:name=".activity.DetailLogBook"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,29 +58,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".editnilaita"
+            android:name=".activity.editnilaita"
             android:exported="false" />
 
         <activity
-            android:name=".inputnilaita"
+            android:name=".activity.inputnilaita"
             android:exported="false" />
         <activity
-            android:name=".itemlistdetailta"
+            android:name=".activity.itemlistdetailta"
             android:exported="false" />
         <activity
-            android:name=".itemlistjadwal"
+            android:name=".activity.itemlistjadwal"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".persetujuanbimbinganta"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".activity.ProfilActivity"
             android:exported="false" />
         <activity
-            android:name=".persetujuanbimbinganta"
+            android:name=".activity.UbahPassActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfilActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UbahPassActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UbahProfilActivity"
+            android:name=".activity.UbahProfilActivity"
             android:exported="false" />
     </application>
 
