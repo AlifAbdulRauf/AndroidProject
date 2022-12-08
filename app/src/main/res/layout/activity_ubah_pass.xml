@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnEditProfil"
+        android:id="@+id/btnEditPass"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
@@ -162,7 +162,7 @@
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/ibBackUbahPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
