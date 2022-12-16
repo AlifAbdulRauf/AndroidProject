@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/unand" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
+        android:id="@+id/ti_nip"
         android:layout_width="330dp"
         android:layout_height="48dp"
         android:layout_marginTop="36dp"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvPersetujuan" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText2"
+        android:id="@+id/ti_password"
         android:layout_width="330dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -53,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/ti_nip" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnLogin"
@@ -66,6 +66,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
+        app:layout_constraintTop_toBottomOf="@+id/ti_password"
         tools:ignore="TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
