@@ -13,9 +13,28 @@ class UserResponse {
     @Expose
     var status: String? = null
 
+    @SerializedName("user")
+    @Expose
+    var identitas: Identitas? = null
+
     @SerializedName("authorisation")
     @Expose
     var authorisation: User? = null
+
+    class Identitas{
+        @SerializedName("username")
+        @Expose
+        var username: String? = null
+
+        @SerializedName("name")
+        @Expose
+        var name: String? = null
+
+        @SerializedName("email")
+        @Expose
+        var email: String? = null
+    }
+
 
     class User{
         @SerializedName("token")

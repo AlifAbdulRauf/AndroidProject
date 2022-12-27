@@ -3,18 +3,14 @@ package com.example.androidproject.model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class UserRequest {
+class ChangePassResponde {
 
-
-    @SerializedName("username")
+    @SerializedName("status")
     @Expose
-    var username: String? = null
+    var status: String? = null
 
-    @SerializedName("password")
+    @SerializedName("message")
     @Expose
-    var password: String? = null
-
-
-
+    var message: String? = null
 
 }

@@ -1,5 +1,6 @@
 package com.example.androidproject.activity
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androidproject.R
 import com.example.androidproject.adapter.Adaptor_rv_listProfil
 import com.example.androidproject.model.Item_rv_listProfil
+import kotlinx.android.synthetic.main.activity_profil.*
 import kotlinx.android.synthetic.main.activity_profil.ivProfill
 import kotlinx.android.synthetic.main.activity_profil_dan_list.*
 
@@ -38,6 +40,15 @@ class ProfilDanListActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
+        val sharePreference = getSharedPreferences("simpan", Context.MODE_PRIVATE)
+
+        val username = sharePreference.getString("username", null)
+        val email = sharePreference.getString("email", null)
+        val name = sharePreference.getString("name", null)
+
+        tv_nama.setText(name)
+        tvnama.setText(username)
 
         var listProfill = mutableListOf(
             Item_rv_listProfil("2011520", "UDIN1", "Padang", "Padang" ),

@@ -38,7 +38,6 @@ class ListLogBook : AppCompatActivity() {
 
     fun itemGetClicked(item: Item_logbook){
         Intent(this, DetailLogBook::class.java).also {
-//            val q = tvDetailLogBook.text.toString()
             val persetujuan = item.isChecked
             val penjelasan = item.describe
             it.putExtra("EXRA_PENJELASAN", penjelasan)
@@ -55,9 +54,6 @@ class ListLogBook : AppCompatActivity() {
 
             startActivity(it)
         }
-
-
-
     }
 
 
