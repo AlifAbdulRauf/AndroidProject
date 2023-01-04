@@ -23,7 +23,8 @@
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.1225" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_detail_log_book.xml" value="0.2997007268063275" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_detail_seminar.xml" value="0.33" />
-        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_detail_sidang.xml" value="0.25" />
+        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_detail_sidang.xml" value="0.33" />
+        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_detailta.xml" value="0.2424112868747328" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_editnilaita.xml" value="0.2997007268063275" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_inputnilaita.xml" value="0.2997007268063275" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/activity_itemlistdetailta.xml" value="0.2997007268063275" />
@@ -41,7 +42,7 @@
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/form_pembatalan.xml" value="0.2436938862761864" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/item_detail_seminar.xml" value="0.5" />
         <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/item_list_dan_profil_mahasiswa.xml" value="0.2436938862761864" />
-        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/rv_list_logbokk.xml" value="0.2436938862761864" />
+        <entry key="..\:/cococo/androidddd/AndroidProject/app/src/main/res/layout/rv_list_logbokk.xml" value="0.33" />
       </map>
     </option>
   </component>
