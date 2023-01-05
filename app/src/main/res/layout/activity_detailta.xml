@@ -149,41 +149,14 @@
         app:layout_constraintTop_toTopOf="@+id/simbol15" />
 
     <TextView
-        android:id="@+id/textnilaita3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Nilai TA"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toStartOf="@+id/nama3"
-        app:layout_constraintHorizontal_bias="0.312"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ibProfilMahasiswa" />
-
-    <EditText
-        android:id="@+id/nilaita3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/textnilaita3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textnilaita3"
-        app:layout_constraintTop_toBottomOf="@+id/textnilaita3"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <TextView
         android:id="@+id/textgrade3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
         android:text="Grade"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/nilaita3"
-        app:layout_constraintStart_toStartOf="@+id/nilaita3"
-        app:layout_constraintTop_toBottomOf="@+id/nilaita3" />
+        app:layout_constraintEnd_toStartOf="@+id/detaita3"
+        app:layout_constraintTop_toTopOf="@+id/detaita3" />
 
     <EditText
         android:id="@+id/grade3"
@@ -201,13 +174,15 @@
         android:id="@+id/textdetailta3"
         android:layout_width="59dp"
         android:layout_height="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="259dp"
         android:shadowColor="@color/black"
         android:text="Detai TA"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/nilaita3"
-        app:layout_constraintTop_toBottomOf="@+id/textnilaita3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibProfilMahasiswa" />
 
     <View
         android:id="@+id/view4"
