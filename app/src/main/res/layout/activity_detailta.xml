@@ -64,21 +64,21 @@
         android:id="@+id/simbol13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:text=":"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/nim3"
-        app:layout_constraintStart_toEndOf="@+id/nim3" />
+        app:layout_constraintEnd_toEndOf="@+id/simbol14"
+        app:layout_constraintTop_toTopOf="@+id/nim3" />
 
     <TextView
         android:id="@+id/simbol14"
         android:layout_width="4dp"
         android:layout_height="17dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="28dp"
         android:text=":"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/nim3"
-        app:layout_constraintStart_toEndOf="@+id/nama3" />
+        app:layout_constraintStart_toEndOf="@+id/nama3"
+        app:layout_constraintTop_toTopOf="@+id/nama3" />
 
     <TextView
         android:id="@+id/nama3"
@@ -113,10 +113,9 @@
         android:id="@+id/simbol15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:text=":"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/judulta3"
+        app:layout_constraintEnd_toEndOf="@+id/simbol13"
         app:layout_constraintTop_toTopOf="@+id/judulta3" />
 
     <TextView
@@ -124,29 +123,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        tools:text="Udin"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/simbol14"
-        app:layout_constraintTop_toTopOf="@+id/simbol14" />
+        app:layout_constraintTop_toTopOf="@+id/simbol14"
+        tools:text="Udin" />
 
     <TextView
         android:id="@+id/nimmahasiwa2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="19123456"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/simbol13"
-        app:layout_constraintStart_toEndOf="@+id/simbol13" />
+        app:layout_constraintStart_toStartOf="@+id/namamahasiswa2"
+        tools:text="19123456" />
 
     <TextView
         android:id="@+id/judultamahasiswa2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        tools:text="Inovasi SI"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/simbol15"
-        app:layout_constraintTop_toTopOf="@+id/simbol15" />
+        app:layout_constraintStart_toStartOf="@+id/nimmahasiwa2"
+        app:layout_constraintTop_toTopOf="@+id/simbol15"
+        tools:text="Inovasi SI" />
 
     <TextView
         android:id="@+id/textgrade3"
@@ -289,7 +287,8 @@
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nipdosen"
-        app:srcCompat="@drawable/profilmahasiswa" />
+        app:srcCompat="@drawable/profilmahasiswa"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

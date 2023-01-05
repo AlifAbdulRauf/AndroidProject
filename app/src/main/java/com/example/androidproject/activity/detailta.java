@@ -106,7 +106,7 @@ public class detailta extends AppCompatActivity {
                 .baseUrl("http://ptb-api.husnilkamil.my.id/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vcHRiLWFwaS5odXNuaWxrYW1pbC5teS5pZC9hcGkvbG9naW4iLCJpYXQiOjE2NzI5Mzc3NDMsImV4cCI6MTY3Mjk0MTM0MywibmJmIjoxNjcyOTM3NzQzLCJqdGkiOiJzU2xLeWhPSlZrbXY4OGxVIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.qVmIxVfurxyXLpaUa-P2kzS1RdxMmSPvVIjgxD7UJAU";
+        String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vcHRiLWFwaS5odXNuaWxrYW1pbC5teS5pZC9hcGkvbG9naW4iLCJpYXQiOjE2NzI5NDE2NjAsImV4cCI6MTY3Mjk0NTI2MCwibmJmIjoxNjcyOTQxNjYwLCJqdGkiOiJ2R0lKd1d1cW1qN050YkZmIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.xBBEHwzXgIZ38UWEyeZu4zvLst8t4bwh9QhdwS0JMOI";
         Call<DetailTAResponse> call = retrofit.create(UserApi.class).detailTA("Bearer "+ token);
         call.enqueue(new Callback<DetailTAResponse>() {
             @Override
