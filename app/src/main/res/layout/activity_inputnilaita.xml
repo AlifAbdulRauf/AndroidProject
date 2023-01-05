@@ -190,37 +190,13 @@
         app:srcCompat="@drawable/profilmahasiswa" />
 
     <TextView
-        android:id="@+id/textnilaita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Nilai TA"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@+id/detaita"
-        app:layout_constraintTop_toBottomOf="@+id/detaita" />
-
-    <EditText
-        android:id="@+id/nilaita"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/textnilaita"
-        app:layout_constraintStart_toStartOf="@+id/textnilaita"
-        app:layout_constraintTop_toBottomOf="@+id/textnilaita"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <TextView
         android:id="@+id/textgrade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:text="Grade"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/textnilaita"
-        app:layout_constraintTop_toTopOf="@+id/textnilaita" />
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="423dp" />
 
     <EditText
         android:id="@+id/grade"

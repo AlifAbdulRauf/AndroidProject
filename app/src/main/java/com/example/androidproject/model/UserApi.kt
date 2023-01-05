@@ -20,24 +20,26 @@ interface UserApi {
         @Header("Authorization") token:String?,
     ): Call<LogOutResponse>
 
+    @GET("thesis/advisors")
+    fun getAdvisors(
+        @Header("Authorization") token:String?,
+    ): Call<ListProfilRes>
+
+    @PATCH("/thesis/grades/277")
+    fun nilaiTa(
+        @Header("Authorization") token:String?,
+        @Body nilaiTaReq: NilaiTaReq
+    ): Call<NilaiTaRes>
+
+    @GET("theses/277/trials/")
+    fun profilMahasiswa(
+        @Header("Authorization") token:String?,
+    ): Call<ProfilMahasiswaRes>
+
     @GET("theses/309/logbooks")
     fun listLog(
         @Header("Authorization") token:String?,
     ): Call<Response>
 
-    @GET("theses/200/logbooks/{id}")
-    fun detailLog(
-        @Path(value = "id", encoded = false) key: Int,
-        @Header("Authorization") token:String?
-    ): Call<DetailLogRes>
+    }
 
-    @GET("theses/14/trials")
-    fun detaiSidang(
-        @Header("Authorization") token:String?
-    ): Call<DetailSidangRes>
-
-//    @GET("theses/14/trials")
-//    fun detaiSidang2(
-//        @Header("Authorization") token:String?
-//    ): Call<ExaminersItem>
-}
