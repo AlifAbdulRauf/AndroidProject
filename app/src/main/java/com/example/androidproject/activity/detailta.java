@@ -7,14 +7,26 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 import com.example.androidproject.R;
+import com.example.androidproject.model.UserApi;
+import com.example.example.DetailTAResponse;
+
+import retrofit2.Retrofit;
 
 public class detailta extends AppCompatActivity {
 
     Button btnDetailSeminar, btnDetailSidang, btnListLogBook, btnPembatalanTA;
     ImageButton btnBack;
     ImageButton ibProfil;
+    TextView tvNamaDosen, tvNipDosen, tvNamaMahasiswa, tvNimMahasiswa, tvJudulTA, tvGrade, tvAbstrak;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +35,14 @@ public class detailta extends AppCompatActivity {
 
 
         btnBack = findViewById(R.id.BackButton);
-
+        tvNamaDosen = findViewById(R.id.namadosen);
+        tvNipDosen = findViewById(R.id.nipdosen);
+        tvNamaMahasiswa = findViewById(R.id.namamahasiswa2);
+        tvNimMahasiswa = findViewById(R.id.nimmahasiwa2);
+        tvJudulTA = findViewById(R.id.judultamahasiswa2);
+        tvGrade = findViewById(R.id.grade3);
+        tvAbstrak = findViewById(R.id.detaita3);
+        getData();
 
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -80,4 +99,34 @@ public class detailta extends AppCompatActivity {
         });
 
     }
+
+    public void getData(){
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://ptb-api.husnilkamil.my.id/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vcHRiLWFwaS5odXNuaWxrYW1pbC5teS5pZC9hcGkvbG9naW4iLCJpYXQiOjE2NzI5Mzc3NDMsImV4cCI6MTY3Mjk0MTM0MywibmJmIjoxNjcyOTM3NzQzLCJqdGkiOiJzU2xLeWhPSlZrbXY4OGxVIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.qVmIxVfurxyXLpaUa-P2kzS1RdxMmSPvVIjgxD7UJAU";
+        Call<DetailTAResponse> call = retrofit.create(UserApi.class).detailTA("Bearer "+ token);
+        call.enqueue(new Callback<DetailTAResponse>() {
+            @Override
+            public void onResponse(Call<DetailTAResponse> call, Response<DetailTAResponse> response) {
+               DetailTAResponse detailTAResponse=response.body();
+                System.out.println("respon data : "+detailTAResponse);
+               tvNamaDosen.setText(detailTAResponse.getSupervisors().get(0).getName());
+               tvNipDosen.setText(detailTAResponse.getSupervisors().get(0).getNip());
+               tvNamaMahasiswa.setText(detailTAResponse.getStudent().getName());
+               tvNimMahasiswa.setText(detailTAResponse.getStudent().getNim());
+               tvJudulTA.setText(detailTAResponse.getTitle());
+               tvGrade.setText(detailTAResponse.getGrade());
+               tvAbstrak.setText(detailTAResponse.getAbstract());
+            }
+
+            @Override
+            public void onFailure(Call<DetailTAResponse> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
 }
